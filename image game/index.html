@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+
+            <h3>images: <span id="result">0</span></h3>
+            <h3 id="level"> level:1 </h3>
+            <div id="settings_img"></div>
+            <!-- <img src="./image/settings.png" alt="settings" id="settings"> -->
+            
+        </div>
+        <div class="warpper">
+            
+            
+        </div>
+    </div>
+    <div class="winner">
+        <img src="./image/end.png" alt="you win" onclick="reload"/>
+        <button id="next" onclick="reload">Next!</button>
+    </div>
+    <div class="settings_warpper">
+        <div>
+            <p id="close">x</p>
+            Game Images:
+            <br>
+            <br>
+            <input type="radio" id="def" name="game_img" value="def">
+            <label for="def">Defualt Images</label>
+            <br>
+            <br>
+            <input type="radio" id="random" name="game_img" value="random">
+            <label for="random">Random Images</label>
+            <br>
+            <button id="done">Done!</button>
+        </div>
+    </div>
+    <div class="timer">
+        35
+    </div>
+        
+</body>
+</html>

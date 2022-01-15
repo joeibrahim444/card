@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.warpper{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 0 auto; */
+}
+.text{
+    width: 400px;
+    margin-bottom: 10px;
+    color: rgb(19, 162, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#level{
+    margin-left: auto;
+}
+#settings_img{
+    background: url("./image/settings.png");
+    width: 25px;
+    height: 25px;
+    background-position: center;
+    background-size: cover;
+    margin-left: 7px;
+    transition: transform 1s;
+}
+/* #settings_img:hover{
+    transform: rotate(60deg);
+} */
+
+img{
+    width: 100px;
+    border-radius: 10px;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.winner,.settings_warpper{
+    background: rgba(0,0,0,0.7);
+    position:fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden ;
+}
+
+.settings_warpper > div{
+    background: rgb(255, 255, 0);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.settings_warpper > div > label {
+    font-size: 1rem;
+}
+.settings_warpper p{
+    text-align: end;
+    color: rgb(226, 55, 55);
+    cursor: pointer;
+}
+.settings_warpper p:hover {
+    color: red;
+}
+body{
+    background: rgb(202, 195, 195);
+}
+.winner > img{
+    width: 500px;
+}
+#next, #done{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background: yellow ;
+    margin-top: -150px
+}
+#done{
+    color: yellow;
+    background: black;
+    padding: 4px;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+#done:hover{
+    background: rgb(31, 30, 30);
+}
+#next:hover{
+    padding: 7px;
+}
+.timer{
+    background: rgb(197, 46, 46);
+    background: lightskyblue;
+    padding: 10px;
+    width: 50px;
+    position: fixed;
+    border-radius: 20%;
+    text-align: center;
+    top: 7%;
+    left: calc(50vw - 25px);
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.5);
+}
+@media  (max-width:700px) {
+    .warpper{
+        height: 400px;
+        width: 300px;
+    }
+    .text{
+        width: 300px;
+    }
+    .winner > img{
+        width: 300px;
+       
+    }
+    .warpper > img{
+        width: 100px;
+        height: 100px;
+    }
+    #next{
+        margin-top: 0;
+    }
+}
